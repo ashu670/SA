@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="bg-pink-300 p-5">
+            <nav>
+                <ul class="flex text-xl underline justify-center items-center gap-7">
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li id="contact" class="font-bold">CONTACT US</li>  <!-- Added ID -->
+                </ul>
+            </nav>
+        </div>
+
+        <div>
+            <form id="contactForm" class="hidden p-5 bg-gray-100 shadow-md w-96 mx-auto">
+                <input type="text" placeholder="Enter your name" class="block w-full p-2 mb-2 border">
+                <input type="email" placeholder="Enter your email" class="block w-full p-2 mb-2 border">
+                <input type="password" placeholder="Enter your password" class="block w-full p-2 mb-2 border">
+                <input type="submit" value="Submit" class="bg-blue-500 text-white px-4 py-2 cursor-pointer">
+            </form>
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-5 p-5">
+            <div class="w-full md:w-1/2">
+                <img src="https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" 
+                     alt="" width="1500px" height="1500px">
+            </div>
+            <div class="w-full md:w-1/2">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum repudiandae quia dolorem vitae iusto quidem quis, dignissimos facilis consequatur, rerum sed esse molestias laboriosam earum voluptates unde temporibus optio hic.
+                Error iusto cum sequi beatae asperiores, perspiciatis quos aliquid nisi. Quae et est aperiam voluptate libero explicabo sapiente cumque, totam fuga id, accusantium cum nemo ipsa porro maiores deleniti provident!
+                Maxime numquam explicabo quasi excepturi facere nulla, ullam, saepe magni soluta dignissimos itaque accusamus quisquam reiciendis dicta magnam quod sunt quidem. Rem, inventore natus earum animi dignissimos beatae magnam dolorum!
+                Et voluptate ea debitis voluptas animi, neque modi recusandae doloribus officia! Excepturi repellat sed accusantium nihil dolore, provident dicta ipsum ea aliquid. Possimus provident ipsa velit voluptatibus reprehenderit quae quibusdam?
+                Reprehenderit necessitatibus dignissimos expedita maiores quis neque. Eveniet quia culpa non nemo, amet ab vitae voluptatum dolorem qui temporibus maxime consectetur. Ab, a assumenda commodi neque voluptatem cumque exercitationem dolorem.
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("contact").addEventListener("click", function() {
+            let form = document.getElementById("contactForm");
+            form.classList.toggle("hidden"); // Toggle visibility
+        });
+    </script>
+</body>
+</html>
